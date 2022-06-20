@@ -1,0 +1,20 @@
+﻿HRApplicationWPF
+
+
+winexe
+C#
+.cs
+D:\!Учеба\Разработка Кода\Kursach\HRApplicationWPF\HRApplicationWPF\obj\Debug\
+HRApplicationWPF
+none
+false
+DEBUG;TRACE
+D:\!Учеба\Разработка Кода\Kursach\HRApplicationWPF\HRApplicationWPF\App.xaml
+17-1625643323
+21750853300
+191023857856
+21-466829896
+MainWindow.xaml;Pages\AddPage.xaml;Pages\AdminPage.xaml;Pages\AuthPage.xaml;Pages\DirectorPage.xaml;Pages\EditAdminPage.xaml;Pages\EditPage.xaml;Themes\MetroDark\MetroDark.MSControls.Core.Implicit.xaml;Themes\MetroDark\MetroDark.MSControls.Toolkit.Implicit.xaml;Themes\MetroDark\Styles.Shared.xaml;Themes\MetroDark\Styles.WPF.xaml;Themes\MetroDark\Theme.Colors.xaml;Themes\Metro\Metro.MSControls.Core.Implicit.xaml;Themes\Metro\Metro.MSControls.Toolkit.Implicit.xaml;Themes\Metro\Styles.Shared.xaml;Themes\Metro\Styles.WPF.xaml;Themes\Metro\Theme.Colors.xaml;
+
+False
+
