@@ -1,0 +1,48 @@
+﻿<Window x:Class="HRApplicationWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HRApplicationWPF"
+        mc:Ignorable="d"
+        WindowStyle="None"
+        MouseLeftButtonDown="Window_MouseLeftButtonDown"
+        Title="Start" Height="530" Width="1000">
+    <WindowChrome.WindowChrome>
+        <WindowChrome CaptionHeight="45"/>
+    </WindowChrome.WindowChrome>
+    <Grid>
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="32*"/>
+        </Grid.RowDefinitions>
+        <Border Background="#E5000000"/>
+        <StackPanel Grid.Row="0" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Left" Height="30">
+            <TextBlock FontFamily="Georgia" FontSize="25" Margin="20,0,0,0">Система учета кадров на предприятии</TextBlock>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="260,0,0,0">
+            <!-- Верхние кнопки -->
+            <StackPanel VerticalAlignment="Top" HorizontalAlignment="Right"
+                    Orientation="Horizontal" Margin="0,5,5,0">
+                <Button Name="BtnGoBack" ToolTip="Назад" Click="BtnGoBack_Click"  Width="55" Height="45"
+                        WindowChrome.IsHitTestVisibleInChrome="True">
+                    <Image Source="Pictures\back.png"/>
+                </Button>
+                <Button Name="BtnRollUp" ToolTip="Свернуть"
+                    Click="BtnRollUp_Click" Width="55" Height="45" WindowChrome.IsHitTestVisibleInChrome="True">
+                    <Image Source="Pictures\hideIcon.png"/>
+                </Button>
+                <Button Name="BtnWinState" ToolTip="Развернуть"
+                    Click="BtnWinState_Click" Width="55" Height="45" WindowChrome.IsHitTestVisibleInChrome="True">
+                    <Image Source="Pictures\resizeIcon.png"/>
+                </Button>
+                <Button Name="BtnClose" ToolTip="Закрыть"
+                    Click="BtnClose_Click" Width="55" Height="45" WindowChrome.IsHitTestVisibleInChrome="True">
+                    <Image Source="Pictures\closeIcon.png"/>
+                </Button>
+            </StackPanel>
+        </StackPanel>
+        <Frame Name="mFrame" Grid.Row="1" NavigationUIVisibility="Hidden" Background="#FF3F3F3F"></Frame>
+    </Grid>
+</Window>

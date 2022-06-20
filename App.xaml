@@ -1,0 +1,43 @@
+﻿<Application x:Class="HRApplicationWPF.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:HRApplicationWPF"
+             StartupUri="MainWindow.xaml">
+    
+    <Application.Resources>
+        <ResourceDictionary>
+            <!-- *********************************  Label Style  ********************************* -->
+            <Style TargetType="{x:Type Label}">
+                <Setter Property="FontFamily" Value="Segoe UI" />
+                <Setter Property="FontSize" Value="22" />
+                <Setter Property="Foreground" Value="{StaticResource ForegroundBrush}" />
+                <Setter Property="IsTabStop" Value="False" />
+                <Setter Property="HorizontalContentAlignment" Value="Left" />
+            </Style>
+
+            <!-- *********************************  TextBlock Style  ********************************* -->
+            <Style TargetType="TextBlock">
+                <Setter Property="Foreground" Value="{StaticResource ForegroundBrush}" />
+                <Setter Property="FontSize" Value="25" />
+                <Setter Property="FontFamily" Value="Segoe UI" />
+            </Style>
+            
+            <Style TargetType="DataGridCell">
+                <Setter Property="Background" Value="#E5000000" />
+            </Style>
+
+            <Style TargetType="DataGridCellsPanel" >
+                <Setter Property="Background" Value="#99000000"/>
+            </Style>
+
+            <Style TargetType="DataGridColumnHeader">
+                <Setter Property="Background" Value="#E5000000"/>
+            </Style>
+            
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Themes/MetroDark/MetroDark.MSControls.Core.Implicit.xaml" />
+                <ResourceDictionary Source="Themes/MetroDark/MetroDark.MSControls.Toolkit.Implicit.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
